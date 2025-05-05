@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cozy Crochet Corner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf0;
+    }
+
+    header {
+      background-color: #f08080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ffdab9;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 1.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .tip {
+      margin-top: 1rem;
+      background-color: #f0e68c;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .sub-heading {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #f08080;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+<body onload="showWelcomeMessage()">
+  <header>
+    <h1>Cozy Crochet Corner</h1>
+    <p>Your place for creativity, yarn, and warmth!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#stitches">Stitch Types</a>
+    <a href="#hooks">Hooks</a>
+    <a href="#yarn">Yarn</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Cozy Crochet Corner! We’re a passionate online community of crochet lovers who enjoy turning yarn into art. Whether you're learning your first chain or tackling complex patterns, you're in good company here.</p>
+    <p>Here you'll find tutorials, product reviews, crochet-alongs (CALs), pattern recommendations, and tips for keeping your hands and hooks happy.</p>
+    <button onclick="showCrochetTip()">Show a Crochet Tip</button>
+    <div class="tip" id="tipArea"></div>
+  </section>
+
+  <section id="stitches">
+    <h2>Common Stitch Types</h2>
+    <p>Mastering these foundational stitches will allow you to read patterns, design your own, and create textured, beautiful pieces.</p>
+    <ul>
+      <li><strong>Chain Stitch (ch):</strong> The starting point for most crochet projects.</li>
+      <li><strong>Single Crochet (sc):</strong> Dense and tight—perfect for toys and pot holders.</li>
+      <li><strong>Half Double Crochet (hdc):</strong> Slightly taller than single crochet with more drape.</li>
+      <li><strong>Double Crochet (dc):</strong> Taller stitch, often used in scarves and blankets.</li>
+      <li><strong>Treble Crochet (tr):</strong> Even taller—used in lacy and open designs.</li>
+      <li><strong>Slip Stitch (sl st):</strong> Used for joining and creating seamless edges.</li>
+    </ul>
+    <p class="sub-heading">Specialty Stitches:</p>
+    <ul>
+      <li><strong>Bobble Stitch:</strong> Adds 3D texture—great for blankets and pillows.</li>
+      <li><strong>Shell Stitch:</strong> Fans of stitches forming a scalloped effect.</li>
+      <li><strong>V-Stitch:</strong> Combines two double crochets—good for airy projects.</li>
+      <li><strong>Granny Square:</strong> Classic building block for larger projects.</li>
+    </ul>
+  </section>
+
+  <section id="hooks">
+    <h2>All About Crochet Hooks</h2>
+    <p>The right hook makes all the difference. Consider material, grip, and size when choosing yours.</p>
+    <p class="sub-heading">Hook Materials:</p>
+    <ul>
+      <li><strong>Aluminum:</strong> Smooth and affordable—great for beginners.</li>
+      <li><strong>Wood/Bamboo:</strong> Lightweight with more friction—ideal for slippery yarns.</li>
+      <li><strong>Plastic:</strong> Lightweight and inexpensive, but can warp over time.</li>
+      <li><strong>Steel:</strong> Used for tiny lace and thread work.</li>
+    </ul>
+    <p class="sub-heading">Hook Sizes:</p>
+    <p>Sizes range from 0.6mm (for lace) to 15mm (for bulky yarn). US sizes go from B-1 (2.25mm) to Q (15mm).</p>
+    <p class="sub-heading">Ergonomics:</p>
+    <p>Choose soft-grip or padded hooks if crocheting for long periods. Brands like Clover Amour and Tulip Etimo are highly rated.</p>
+  </section>
+
+  <section id="yarn">
+    <h2>Choosing the Right Yarn</h2>
+    <p>Yarn determines texture, durability, and color. Each project might need a different yarn type!</p>
+    <p class="sub-heading">Fiber Types:</p>
+    <ul>
+      <li><strong>Cotton:</strong> Great for summer wear, dishcloths, and amigurumi.</li>
+      <li><strong>Acrylic:</strong> Inexpensive, washable, and available in all colors and weights.</li>
+      <li><strong>Wool:</strong> Warm, breathable, and stretchy—ideal for garments and winter wear.</li>
+      <li><strong>Blends:</strong> Mix benefits (like cotton-acrylic or wool-silk) for comfort and performance.</li>
+    </ul>
+    <p class="sub-heading">Yarn Weights:</p>
+    <ul>
+      <li><strong>Lace:</strong> Very fine; used for doilies and shawls.</li>
+      <li><strong>Sport/DK:</strong> Lighter weight for baby items and garments.</li>
+      <li><strong>Worsted:</strong> Medium weight—perfect for most patterns.</li>
+      <li><strong>Bulky/Super Bulky:</strong> Thick, cozy yarns great for quick blankets and hats.</li>
+    </ul>
+    <p class="sub-heading">Yarn Labels:</p>
+    <p>Always read the label for hook size suggestions, washing instructions, and yardage per skein.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Some of our community favorites:</p>
+    <ul>
+      <li>🌸 <strong>Granny Square Blanket:</strong> A colorful classic with endless possibilities.</li>
+      <li>🧸 <strong>Amigurumi Teddy Bear:</strong> Perfect beginner project for soft toys.</li>
+      <li>🧣 <strong>Chunky Winter Scarf:</strong> Stylish and warm, made with super bulky yarn.</li>
+      <li>👜 <strong>Boho Market Bag:</strong> Lightweight and reusable shopping bag made with cotton yarn.</li>
+      <li>🧶 <strong>Lacy Shawl:</strong> Lightweight and elegant for evening wear.</li>
+    </ul>
+  </section>
+
+<section id="granny-square">
+    <h2>Granny Square Pattern</h2>
+    <p>The classic granny square is a foundational motif in crochet. It’s beginner-friendly and endlessly customizable, perfect for blankets, bags, and more!</p>
+
+  <img src="https://th.bing.com/th/id/OIP.kAwoasTxXHhCqs5Bnx5bWgAAAA?rs=1&pid=ImgDetMain" alt="Basic Granny Square" style="max-width:100%; height:auto; border-radius:10px; margin: 1rem 0;" />
+
+    <h3>🧶 Materials</h3>
+    <ul>
+      <li>Worsted weight yarn (in one or more colors)</li>
+      <li>5.0 mm (H-8) crochet hook</li>
+      <li>Scissors and yarn needle</li>
+    </ul>
+
+    <h3>📝 Pattern Instructions (US Terms)</h3>
+    <ol>
+      <li><strong>Start:</strong> Begin with a magic ring OR chain 4 and slip stitch to form a ring.</li>
+      <li><strong>Round 1:</strong> Ch 3 (counts as 1 dc), 2 dc in ring, ch 2. *(3 dc, ch 2)* three more times. Join with sl st to top of beginning ch-3. (4 clusters)</li>
+      <li><strong>Round 2:</strong> Sl st to next ch-2 space. Ch 3, 2 dc, ch 2, 3 dc in same space (corner). Repeat in each ch-2 space. Join with sl st.</li>
+      <li><strong>Round 3:</strong> Work *(3 dc) in each side space, and (3 dc, ch 2, 3 dc) in each corner*. Join with sl st.</li>
+      <li><strong>Round 4+</strong>: Continue pattern, adding side clusters and corner clusters as needed.</li>
+    </ol>
+
+    <h3>💡 Helpful Tips</h3>
+    <ul>
+      <li>Change colors after any round for a multi-color effect.</li>
+      <li>Use a stitch marker to keep track of rounds if needed.</li>
+      <li>Block squares after finishing for uniform size and shape.</li>
+    </ul>
+
+    <div class="tip">
+      🌟 <strong>Bonus:</strong> Join finished squares using slip stitch, whip stitch, or join-as-you-go methods for larger projects like blankets or scarves.
+    </div>
+  
+  <h3>🎥 Video Tutorial</h3>
+  <p>For a step-by-step visual guide, watch this beginner-friendly tutorial:</p>
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; margin-bottom:1rem;">
+    <iframe src="https://www.youtube.com/embed/GALGQdP_POw" title="How to Crochet a Granny Square | Absolute Beginners | Bella Coco" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question, or want to share your latest creation? Reach out!</p>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" rows="5" cols="40"></textarea><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Cozy Crochet Corner</p>
+  </footer>
+
+  <script>
+    function showWelcomeMessage() {
+      alert("Welcome to Cozy Crochet Corner!");
+    }
+
+    function showCrochetTip() {
+      const tips = [
+        "Always count your stitches to avoid mistakes.",
+        "Use a stitch marker to mark the beginning of rounds.",
+        "Practice tension control for consistent stitching.",
+        "Don't forget to take breaks—crocheting is relaxing, not a race!",
+        "Store your yarn in a dry, dust-free container.",
+        "Use ergonomic hooks to avoid hand strain.",
+        "Check your gauge to ensure correct sizing.",
+        "Read yarn labels to avoid washing disasters!"
+      ];
+      const randomIndex = Math.floor(Math.random() * tips.length);
+      document.getElementById("tipArea").innerText = tips[randomIndex];
+    }
+
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const display = document.getElementById("formMessage");
+
+      if (!name || !email || !message) {
+        display.innerText = "Please fill out all fields.";
+        display.style.color = "red";
+        return false;
+      } else {
+        display.innerText = "Thank you for contacting us!";
+        display.style.color = "green";
+        return false; // Prevents actual submission
+      }
+    }
+  </script>
+</body>
+</html>
